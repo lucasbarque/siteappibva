@@ -7,7 +7,7 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/estilo.css"  />
       <link rel="icon" href="imagens/favicon.png" />
-      <title>Principal - IBVA</title>
+      <title>Avisos - IBVA</title>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,7 +19,7 @@
             <div class="nav-wrapper green darken-2">
               <a href="#!" class="brand-logo nav-logo">Vidas no Altar</a>
                 <ul class="right hide-on-med-and-down">
-                  <li><a href="avisos.html">Avisos</a></li>
+                  <li class="active"><a href="avisos.html">Avisos</a></li>
                   <li><a href="roteiros.html">Roteiros</a></li>
                   <li><a href="#.html">Programações</a></li>
                   <li><a href="aniversariantes.html">Aniversariantes</a></li>
@@ -31,16 +31,31 @@
             </div>            
          </nav>
       <div class="container">
+               <div class="row">   
+                   
+                  <div class="card-panel hoverable center login">
+                      <h4>Novo Aviso - Célula Ágape</h4>
+                      <form action="avisos-selecionado.html">        
+                        <div class="row">
+                          <div class="input-field col s6 offset-l3">
+                              <input id="password" type="text" class="validate" required>
+                            <label for="titulo">Título do aviso</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s6 offset-l3">
+                            <input id="email" type="text" class="validate" required>
+                            <label for="conteudo">Conteúdo do aviso</label>
+                          </div>
+                        </div>
+                          <button class="waves-effect waves-light btn">Cadastrar aviso<i class="material-icons left">done</i></button>
+                      </form>
+                  </div>
+               </div>
           
-          <div class="row">
-              <div class="col s12">
-                              
-              </div>
-          </div>
-          
+ 
+        
       </div>
-        
-        
         
       
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

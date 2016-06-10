@@ -6,36 +6,42 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/estilo.css"  />
+      <link rel="icon" href="imagens/favicon.png" />
 
       <!--Let browser know website is optimized for mobile-->
+      <title>Início - IBVA</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8"/>
     </head>
 
     <body>
         
       <div class="container">
           <div class="row">
-              <div class="col s12 center">
-                  <div class="card-panel hoverable center login">
-                        <img src="imagens/logo.png" alt="Logo Ibva" class="responsive-img center imagem-logo">
-                            <h5>Vidas no Altar</h5>
+              <div class="col s12 ">
+                  <div class="card-panel hoverable  login">
+                      <div class="row"> 
+                          <div class="col s12 center">
+                      <img src="imagens/logo.png" alt="Logo Ibva" class="responsive-img center imagem-logo">
+                      </div>
+                      </div>     
                             <div class="row">
                                 <div class="col s6 offset-l3">
                                     <div class="input-field">
-                                      <input id="login" type="text" class="validate">
-                                      <label for="Login">Login</label>
+                                      <input id="login" type="text" class="validate" required>
+                                      <label for="Login">Login</label> 
                                     </div>    
                                 </div> 
                                 
                                 <div class="col s6 offset-l3">
                                     <div class="input-field">
-                                      <input id="login" type="text" class="validate">
+                                      <input id="login" type="password" class="validate" required>
                                       <label for="Senha">Senha</label>
                                     </div>    
                                 </div>
                                 
-                                <div class="col s6 offset-l3">
-                                    <a class="waves-effect waves-light btn" href="principal.html">Entrar</a>  
+                                <div class="col s6 offset-l3 center">
+                                    <a class="waves-effect waves-light btn-large" href="principal.html">Entrar</a>  
                                 </div>
                             </div>
                   </div>                

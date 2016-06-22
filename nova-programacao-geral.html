@@ -19,6 +19,7 @@
          <nav>
             <div class="nav-wrapper teal">
               <a href="#!" class="brand-logo nav-logo">Vidas no Altar</a>
+              <a href="#" data-activates="menu-celular" class="button-collapse nav-celular"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                   <li><a href="avisos.html">Avisos</a></li>
                   <li ><a href="roteiros.html">Roteiros</a></li>
@@ -27,30 +28,40 @@
                   <li><a href="ge.html">Ge's</a></li>
                   <li><a href="celulas.html">Célula</a></li>
                   <li><a href="usuarios.html">Usuários</a></li>
-                  <li><a class="dropdown-button" href="index.html">Sair</a></li>
+                  <li><a href="index.html">Sair</a></li>
                 </ul>
+              <ul class="side-nav" id="menu-celular">
+                  <li><a href="avisos.html">Avisos</a></li>
+                  <li><a href="roteiros.html">Roteiros</a></li>
+                  <li><a href="programacoes.html">Programações</a></li>
+                  <li><a href="aniversariantes.html">Aniversariantes</a></li>
+                  <li><a href="ge.html">Ge's</a></li>
+                  <li><a href="celulas.html">Célula</a></li>
+                  <li><a href="usuarios.html">Usuários</a></li>
+                  <li><a href="index.html">Sair</a></li> 
+              </ul>
             </div>            
          </nav>
       <div class="container">
                <div class="row">   
                    
                   <div class="card-panel hoverable center login">
-                      <h4>Nova Programaçao</h4>
+                      <h4 class="titulo-pagina">Nova Programaçao</h4>
                       <form action="programacoes.html">        
                         <div class="row">
-                          <div class="input-field col s6 offset-l3">
+                          <div class="input-field col m6 s12 offset-l3">
                               <input id="nome" type="text" class="validate" required>
                             <label for="nome">Nome da Programação</label>
                           </div>
                         </div>
                            <div class="row">
-                          <div class="col s3 offset-l3">
+                          <div class="col m3 s12 offset-l3">
                               <label>Data Programação</label>
                             <input type="date" class="datepicker">                                                 
                           </div>
                            
                        <div class="row center">
-                          <div class="col s3 ">
+                          <div class="col m3 s12 ">
                               <label>Horário Programação</label>
                               <input type="time" class="center">                                                 
                           </div>   
@@ -58,21 +69,21 @@
                         </div>  
                           
                           <div class="row">
-                         <div class="input-field col s3 offset-l3">
+                         <div class="input-field col m3 s12 offset-l3">
                               <input id="local" type="text" class="validate" required>
                             <label for="local">Local/Endereço da Programação</label>
                           </div>
                            
                        <div class="row center">
-                          <div class="input-field col s3 ">
-                              <label>Telefone</label>                             
-                              <input type="text" name="telefone" id="telefone" maxlength="15" />
+                          <div class="input-field col m3 s12 center ">
+                              <label class="center col s12">Telefone</label>                             
+                              <input type="text" name="telefone" id="telefone" maxlength="15" class="center" />
                           </div>   
                        </div>                          
                         </div> 
                     <div class="row">
                         
-                          <div class="input-field col s2 offset-l5">                 
+                          <div class="input-field col m2 s12 offset-l5">                 
                               <input type="text" name="valor" class="validate center" onKeyPress="return(MascaraMoeda(this,'.',',',event))">
                             <label for="valor">Valor</label>
                           
@@ -81,7 +92,7 @@
                         </div>
                                
                         <div class="row">
-                          <div class="file-field input-field col s6 offset-l3">
+                          <div class="file-field input-field col m6 s12 offset-l3">
                             <div class="btn">
                               <span>Imagem</span>
                               <input type="file" name="imagem" id="imagem">
@@ -140,6 +151,7 @@
   </footer>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
      
 
     </body>

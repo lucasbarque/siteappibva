@@ -18,6 +18,7 @@
          <nav>
             <div class="nav-wrapper teal">
               <a href="#!" class="brand-logo nav-logo">Vidas no Altar</a>
+              <a href="#" data-activates="menu-celular" class="button-collapse nav-celular"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                   <li class="active"><a href="avisos.html">Avisos</a></li>
                   <li><a href="roteiros.html">Roteiros</a></li>
@@ -28,16 +29,26 @@
                   <li><a href="usuarios.html">Usuários</a></li>
                   <li><a class="dropdown-button" href="index.html">Sair</a></li>
                 </ul>
+              <ul class="side-nav" id="menu-celular">
+                  <li><a href="avisos.html">Avisos</a></li>
+                  <li><a href="roteiros.html">Roteiros</a></li>
+                  <li><a href="programacoes.html">Programações</a></li>
+                  <li><a href="aniversariantes.html">Aniversariantes</a></li>
+                  <li><a href="ge.html">Ge's</a></li>
+                  <li><a href="celulas.html">Célula</a></li>
+                  <li><a href="usuarios.html">Usuários</a></li>
+                  <li><a href="index.html">Sair</a></li> 
+              </ul>
             </div>            
          </nav>
       <div class="container">
                <div class="row">   
                    
                   <div class="card-panel hoverable center login">
-                      <h4>Novo GE - Célula Ágape</h4>
+                      <h4 class="titulo-pagina">Novo GE - Célula Ágape</h4>
                       <form action="novo-ge.html">        
                         <div class="row">
-                          <div class="input-field col s6 offset-l3">
+                          <div class="input-field col m6 offset-m3 s12">
                               <input id="password" type="text" class="validate" required>
                             <label for="nome">Nome do GE</label>
                           </div>

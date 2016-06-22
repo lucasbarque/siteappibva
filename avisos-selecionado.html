@@ -18,6 +18,7 @@
          <nav>
             <div class="nav-wrapper teal">
               <a href="#!" class="brand-logo nav-logo">Vidas no Altar</a>
+              <a href="#" data-activates="menu-celular" class="button-collapse nav-celular"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                   <li class="active"><a href="avisos.html" >Avisos</a></li>
                   <li><a href="roteiros.html">Roteiros</a></li>
@@ -26,7 +27,17 @@
                   <li><a href="ge.html">Ge's</a></li>
                   <li><a href="celulas.html">Célula</a></li>
                   <li><a href="usuarios.html">Usuários</a></li>
-                  <li><a class="dropdown-button" href="index.html">Sair</a></li>
+                  <li><a href="index.html">Sair</a></li>
+                </ul>
+                <ul class="side-nav" id="menu-celular">
+                  <li><a href="avisos.html" >Avisos</a></li>
+                  <li><a href="roteiros.html">Roteiros</a></li>
+                  <li><a href="programacoes.html">Programações</a></li>
+                  <li><a href="aniversariantes.html">Aniversariantes</a></li>
+                  <li><a href="ge.html">Ge's</a></li>
+                  <li><a href="celulas.html">Célula</a></li>
+                  <li><a href="usuarios.html">Usuários</a></li>
+                  <li><a href="index.html">Sair</a></li>         
                 </ul>
             </div>            
          </nav>
@@ -34,12 +45,19 @@
           
           <div class="row">
               <div class="col s12">         
-                  <h2 class="center">Célula Ágape</h2>
-                  <ul class="collection with-header">                    
-                    <li class="collection-item"><div>Célula Sábado<a href="#!" class="secondary-content " ><i class="material-icons red-text" >delete</i></a><a href="#!" class="secondary-content"><i class="material-icons ">mode_edit</i></a></div></li>
-                    <li class="collection-item"><div>Ceia Ágape<a href="#!" class="secondary-content "><i class="material-icons red-text">delete</i></a><a href="#!" class="secondary-content"><i class="material-icons ">mode_edit</i></a></div></li>
-                    <li class="collection-item"><div>Celebração das Células<a href="#!" class="secondary-content "><i class="material-icons red-text">delete</i></a><a href="#!" class="secondary-content"><i class="material-icons ">mode_edit</i></a></div></li>
-                    <li class="collection-item "><div>Lanche Célula<a href="#!" class="secondary-content "><i class="material-icons red-text">delete</i></a><a href="#!" class="secondary-content"><i class="material-icons ">mode_edit</i></a></div></li>
+                  <h2 class="center titulo-pagina">Célula Ágape</h2>
+                  <ul class="collection with-header">                         
+                        <li class="collection-item"><div id="myCanvas">Célula Sábado<a href="#!" class="secondary-content " >
+                                    <i class="material-icons red-text acao-lista" >delete</i></a>
+                                <a href="#!" class="secondary-content">
+                                    <i class="material-icons acao-lista">mode_edit</i></a>
+                                   
+                            </div>
+                        </li>
+                    
+                      <li class="collection-item"><div id="myCanvas1">Ceia Ágape<a href="#!" class="secondary-content "><i class="material-icons red-text acao-lista">delete</i></a><a href="#!" class="secondary-content"><i class="material-icons acao-lista">mode_edit</i></a></div></li>
+                    <li class="collection-item"><div id="myCanvas2">Celebração das Células<a href="#!" class="secondary-content "><i class="material-icons red-text acao-lista">delete</i></a><a href="#!" class="secondary-content"><i class="material-icons acao-lista ">mode_edit</i></a></div></li>
+                    <li class="collection-item "><div id="myCanvas3">Lanche Célula<a href="#!" class="secondary-content "><i class="material-icons red-text acao-lista">delete</i></a><a href="#!" class="secondary-content"><i class="material-icons acao-lista">mode_edit</i></a></div></li>
                   
                   </ul>
                   <div class=" right">
@@ -93,6 +111,33 @@
       
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+       <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript">
+                    var teste = document.getElementById('myCanvas');
+                  
+          var timer = null;
+
+
+          teste.onmousedown = function(){
+            console.log('click');
+             timer = setTimeout( doStuff, 1000 );
+
+          };
+
+
+          teste.onmouseup = function(){
+            clearTimeout( timer );
+          };
+         
+
+
+
+          function doStuff(){
+
+                      document.getElementById("myCanvas").innerHTML = "<div class='row center'><a class='btn' href='#'>Editar</a><a class='btn' href='#'>Apagar</a></div>";
+                     }
+      </script>
+   
       
     </body>
   </html>

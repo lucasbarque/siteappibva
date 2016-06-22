@@ -29,8 +29,40 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;    
-    width: 100%;
+    width: 100%;    
 }
 .brown-text{
     color:#FFFFFF;
+}
+.nav-celular{
+  padding-left: 12px;
+}
+
+
+@media (max-width: 1000px) {
+    .titulo-pagina{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    footer{
+       position:relative;
+       bottom:-20px;
+       left:0;
+       width: 100%;
+
+
+    }
+    
+    body {
+        margin: 0 0 0; /* bottom = footer height */
+    }
+    .acao-lista{
+        display: none;
+    }
+    
+    .imagem-logo{    
+    width: 55%;    
+    }
+    
 }
